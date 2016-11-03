@@ -23,7 +23,7 @@ module.exports = function(roomId) {
 
 		function onMessage(data) {
 			var from = data.from.name || data.from + ': ';
-			var mdate = "["+moment(data.date).format('YYYY-MM-DD hh:mm:ss')+"]";
+			var mdate = "["+moment(data.date).format('YYYY-MM-DD kk:mm:ss')+"]";
 			console.log(mdate.red, from.yellow, data.message.blue);
 			return beep([10, 10]);
 
