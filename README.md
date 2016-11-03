@@ -1,6 +1,8 @@
 hipchat for terminal
 ==
 
+Forked from (https://github.com/bubenshchykov/hc-cli), for tweaking message display, for example displaying the message date.
+
 Get your authtoken from Account Settings. Be sure to select all scopes.
 
 ![!get auth token](http://s13.postimg.org/42vr01ckn/create_New_Token.png)

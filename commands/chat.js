@@ -4,6 +4,7 @@ var db = require('../common/db');
 var Api = require('../common/api');
 var readline = require('readline');
 var beep = require('beepbeep');
+var moment = require('moment');
 
 module.exports = function(roomId) {
 	console.log('joining the room..'.green);
@@ -22,7 +23,8 @@ module.exports = function(roomId) {
 
 		function onMessage(data) {
 			var from = data.from.name || data.from + ': ';
-			console.log(from.yellow, data.message.blue);
+			var mdate = "["+moment(data.date).format('YYYY-MM-DD hh:mm:ss')+"]";
+			console.log(mdate.red, from.yellow, data.message.blue);
 			return beep([10, 10]);
 
 		}

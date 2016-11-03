@@ -3,13 +3,14 @@
   "version": "0.0.7",
   "description": "hipchat for terminal",
   "dependencies": {
-    "commander": "",
-    "nedb": "~0.10.5",
-    "userhome": "~0.1.0",
-    "request": "~2.34.0",
+    "beepbeep": "~1.2.0",
     "colors": "~0.6.2",
+    "commander": "",
+    "moment": "^2.15.2",
+    "nedb": "~0.10.5",
     "readline": "0.0.3",
-    "beepbeep": "~1.2.0"
+    "request": "~2.34.0",
+    "userhome": "~0.1.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -17,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bubenshchykov/hc-cli.git"
+    "url": "git://github.com/jfretin/hc-cli.git"
   },
   "keywords": [
     "hipchat",
@@ -25,12 +26,12 @@
     "chat",
     "terminal"
   ],
-  "author": "bubenshchykov",
+  "author": "jfretin",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/bubenshchykov/hc-cli/issues"
+    "url": "https://github.com/jfretin/hc-cli/issues"
   },
-  "homepage": "https://github.com/bubenshchykov/hc-cli",
+  "homepage": "https://github.com/jfretin/hc-cli",
   "bin": {
     "hip": "./bin/cli.js"
   }
